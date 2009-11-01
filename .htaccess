@@ -6,4 +6,4 @@ RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^.*$ - [NC,L]
 
 #let's only support 6 char colors even though script handles 3 chars        
-RewriteRule ^([a-f0-9]{6})([0-9]{1,4})x([\d]{1,5})(top|right|bottom|left)([a-f0-9]{6})([\d]{1,2})\.(png|gif|jpg)$  ../../pimages/fauximage.php?bgColor=$1&bgWidth=$2&bgHeight=$3&bdLoc=$4&bdColor=$5&bdSize=$6&imgType=$7 [NC,L]
+RewriteRule ^([a-f0-9]{6})([0-9]{1,4})x([\d]{1,5})(top|right|bottom|left)([a-f0-9]{6})([\d]{1,2})\.(png|gif|jpg)$  path/to/fauximages/fauximage.php?bgColor=$1&bgWidth=$2&bgHeight=$3&bdLoc=$4&bdColor=$5&bdSize=$6&imgType=$7 [NC,L]
